@@ -62,9 +62,23 @@ class TestGameMethods(unittest.TestCase):
     @patch('tic_tac_game.TicTacGame.input_data')
     def test_full_move(self, mock_input):
         game = TicTacGame()
-        mock_input.return_value = ['1', '1']
+        mock_input.return_value = ['1', '3']
         self.assertFalse(game.one_move('X'))
 
+    @patch('tic_tac_game.TicTacGame.input_data', return_value=['1', '1'])
+    @patch('tic_tac_game.TicTacGame.input_data_2', return_value=['1', '2'])
+    @patch('tic_tac_game.TicTacGame.input_data_3', return_value=['1', '5'])
+    def test_full_mistake_move(self, mock_inp_1, mock_inp_2, mock_inp_3):
+        game = TicTacGame()
+        game.validate_input('0', 1, 1)
+        self.assertFalse(game.one_move('X'))
+
+    @patch('builtins.print')
+    def test_greet(self, mock_print):
+
+        game = TicTacGame()
+        game.show_board()
+        mock_print.assert_called_with("=" * 9)
     # =================WINNER CHECKING=================
 
     def test_check_init_winner(self):

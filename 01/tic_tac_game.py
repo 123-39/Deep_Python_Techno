@@ -24,7 +24,7 @@ class TicTacGame:
         """ Show the game board """
 
         print("--1-2-3--")
-        print("=" * 9)
+        print("~" * 9)
         for i in range(3):
             raw = "| "
             for j in range(3):
@@ -70,6 +70,8 @@ class TicTacGame:
         # Игра с проверкой на выигрыш
         while True:
             for player in (self.first, self.second):
+                self.show_board()
+                print(f"{player}-move. Where? ")
                 if self.one_move(player):
                     self.show_board()
                     print(f"{player}-player win!")
@@ -82,24 +84,34 @@ class TicTacGame:
 
         """ Input data function for tests """
 
-        return input("raw col: ").split(',')
+        return input("raw, col: ").split(',')
+
+    def input_data_2(self):
+
+        """ Input data function for tests """
+
+        return input("raw, col: ").split(',')
+
+    def input_data_3(self):
+
+        """ Input data function for tests """
+
+        return input("raw, col: ").split(',')
 
     def one_move(self, player):
 
         """ Player move and board display """
 
-        self.show_board()
-        print(f"{player}-move. Where? ")
         checking, i, j = self.check_input(self.input_data())
         while True:
             if not checking:
                 print("Select correct cell")
-                checking, i, j = self.check_input(self.input_data())
+                checking, i, j = self.check_input(self.input_data_2())
                 continue
-            if (self.validate_input(player, i, j)):
+            if self.validate_input(player, i, j):
                 break
             print("Select another cell")
-            checking, i, j = self.check_input(self.input_data())
+            checking, i, j = self.check_input(self.input_data_3())
 
         return self.check_winner()
 
