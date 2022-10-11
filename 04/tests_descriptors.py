@@ -1,0 +1,44 @@
+""" CustomList class tests """
+import unittest
+from descriptors import Data
+
+
+class TestDescriptors(unittest.TestCase):
+
+    def test_right_type_check(self):
+
+        inst = Data(-5, 'kek', 10)
+        self.assertIsInstance(inst.num, int)
+        self.assertIsInstance(inst.name, str)
+        self.assertIsInstance(inst.price, int)
+
+    def test_output(self):
+
+        inst = Data(-5, 'kek', 10)
+        output = f"num: {-5}, name: {'kek'}, price: {10}"
+        self.assertEqual(str(inst), output)
+
+    def test_false_num(self):
+
+        with self.assertRaises(Exception):
+            Data('5', 'kek', 10)
+
+    def test_false_name(self):
+
+        with self.assertRaises(Exception):
+            Data(5, 2.3, 10)
+
+    def test_false_price_type(self):
+
+        with self.assertRaises(Exception):
+            Data(5, 'kek', 3.2)
+
+    def test_false_price_sign(self):
+
+        with self.assertRaises(Exception):
+            Data(5, 'kek', -10)
+
+
+if __name__ == "__main__":
+
+    unittest.main()
