@@ -11,8 +11,8 @@ def keyword_callback_1(word, field):
     print(f"'{word}' is found in '{field}'")
 
 
-def parse_json(keyword_callback, json_str, required_fields=None,
-               keywords=None):
+def parse_json(json_str, keyword_callback=keyword_callback_1,
+               required_fields=None, keywords=None):
     """
     parse and find words
     """

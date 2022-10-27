@@ -35,7 +35,7 @@ class TestParser(unittest.TestCase):
         required_fields = ["name"]
         keywords = [json_dict.get('name')[1]]
 
-        parse_json(callback_func, json.dumps(json_dict),
+        parse_json(json.dumps(json_dict), callback_func,
                    required_fields, keywords)
         self.assertEqual(callback_func.call_count, 1)
 
@@ -49,7 +49,7 @@ class TestParser(unittest.TestCase):
         required_fields = ["name", "ex_name"]
         keywords = [json_dict.get('name')[1]]
 
-        parse_json(callback_func, json.dumps(json_dict),
+        parse_json(json.dumps(json_dict), callback_func,
                    required_fields, keywords)
 
         self.assertEqual(callback_func.call_count, 2)
@@ -63,7 +63,7 @@ class TestParser(unittest.TestCase):
         required_fields = ["adress"]
         keywords = [json_dict.get('name')[1]]
 
-        parse_json(callback_func, json.dumps(json_dict),
+        parse_json(json.dumps(json_dict), callback_func,
                    required_fields, keywords)
         self.assertEqual(callback_func.call_count, 0)
 
@@ -83,7 +83,7 @@ class TestParser(unittest.TestCase):
                                   for _ in range(numb_val)]
                                  for i in range(len(req_fields_))], [])))
 
-        parse_json(callback_func, json.dumps(json_dict),
+        parse_json(json.dumps(json_dict), callback_func,
                    req_fields_, keywords_)
         self.assertEqual(len(keywords_), callback_func.call_count)
 
@@ -93,7 +93,7 @@ class TestParser(unittest.TestCase):
         Zero key zero keyword zero callback test
         """
         json_dict = json_creating(dict_size=10)
-        parse_json(callback_func, json.dumps(json_dict))
+        parse_json(json.dumps(json_dict), callback_func)
         self.assertEqual(callback_func.call_count, 0)
 
     @patch('builtins.print')
@@ -105,7 +105,7 @@ class TestParser(unittest.TestCase):
         req_fields = ["key1"]
         keywords = ["word2"]
 
-        parse_json(keyword_callback_1, json_str,
+        parse_json(json_str, keyword_callback_1,
                    req_fields, keywords)
 
         output = f"'{keywords[-1]}' is found in '{req_fields[-1]}'"
