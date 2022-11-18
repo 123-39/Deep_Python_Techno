@@ -44,16 +44,13 @@ class CustomList(list):
         """
         list or customlist checking
         """
-        left = np.array(self.custm_list)
-        try:
-            right = np.array(other.custm_list)
-        except AttributeError:
-            right = np.array(other)
+        left = np.array(self)
+        right = np.array(other)
         return left, right
 
-    def __init__(self, custm_list):
-        super().__init__(self)
-        self.custm_list = custm_list
+    # def __init__(self, custm_list):
+    #     super().__init__(self)
+    #     self.custm_list = custm_list
 
     def __sub__(self, other):
         left, right = self.type_checking(other)
@@ -72,23 +69,23 @@ class CustomList(list):
         return self.add(left, right)
 
     def __lt__(self, other):
-        return sum(self.custm_list) < sum(other.custm_list)
+        return sum(self) < sum(other)
 
     def __le__(self, other):
-        return sum(self.custm_list) <= sum(other.custm_list)
+        return sum(self) <= sum(other)
 
     def __eq__(self, other):
-        return sum(self.custm_list) == sum(other.custm_list)
+        return sum(self) == sum(other)
 
     def __ne__(self, other):
-        return sum(self.custm_list) != sum(other.custm_list)
+        return sum(self) != sum(other)
 
     def __gt__(self, other):
-        return sum(self.custm_list) > sum(other.custm_list)
+        return sum(self) > sum(other)
 
     def __ge__(self, other):
-        return sum(self.custm_list) >= sum(other.custm_list)
+        return sum(self) >= sum(other)
 
     def __str__(self):
-        return f"CustomList: {self.custm_list}." +\
-            f" Sum of elements: {sum(self.custm_list)}"
+        return f"CustomList: {super().__str__()}." +\
+             f" Sum of elements: {sum(self)}"

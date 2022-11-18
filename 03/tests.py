@@ -11,172 +11,438 @@ class TestCustomList(unittest.TestCase):
 
     def test_true_custom_list_left_add(self):
 
-        first = CustomList([1, 2])
-        second = CustomList([3, 5, 6, 7])
-        third = CustomList([4, 7, 6, 7])
-        self.assertEqual(first + second, third)
+        init_list1 = [1, 2]
+        init_list2 = [3, 5, 6, 7]
+        init_list3 = [4, 7, 6, 7]
+
+        first = CustomList(init_list1.copy())
+        second = CustomList(init_list2.copy())
+
+        third_pred = first + second
+
+        for i, _ in enumerate(init_list3):
+            if i <= len(init_list1) - 1:
+                self.assertEqual(first[i], init_list1[i])
+            if i <= len(init_list2) - 1:
+                self.assertEqual(second[i], init_list2[i])
+            self.assertEqual(third_pred[i], init_list3[i])
 
     def test_true_custom_list_right_add(self):
 
-        first = CustomList([3, 5, 6, 7])
-        second = CustomList([1, 2])
-        third = CustomList([4, 7, 6, 7])
-        self.assertEqual(first + second, third)
+        init_list1 = [3, 5, 6, 7]
+        init_list2 = [1, 2]
+        init_list3 = [4, 7, 6, 7]
+
+        first = CustomList(init_list1.copy())
+        second = CustomList(init_list2.copy())
+
+        third_pred = first + second
+
+        for i, _ in enumerate(init_list3):
+            if i <= len(init_list1) - 1:
+                self.assertEqual(first[i], init_list1[i])
+            if i <= len(init_list2) - 1:
+                self.assertEqual(second[i], init_list2[i])
+            self.assertEqual(third_pred[i], init_list3[i])
 
     def test_false_custom_list_left_add(self):
 
-        first = CustomList([1, 2])
-        second = CustomList([3, 5, 6, 7])
-        third = CustomList([0, 7, 3, 7])
-        self.assertNotEqual(first + second, third)
+        init_list1 = [1, 2]
+        init_list2 = [3, 5, 6, 7]
+        init_list3 = [0, 7, 3, 7]
+
+        first = CustomList(init_list1.copy())
+        second = CustomList(init_list2.copy())
+
+        third_pred = first + second
+
+        for i, _ in enumerate(init_list3):
+            if i <= len(init_list1) - 1:
+                self.assertEqual(first[i], init_list1[i])
+            if i <= len(init_list2) - 1:
+                self.assertEqual(second[i], init_list2[i])
+
+        self.assertNotEqual(third_pred, CustomList(init_list3))
 
     def test_false_custom_list_right_add(self):
 
-        first = CustomList([3, 5, 6, 7])
-        second = CustomList([1, 2])
-        third = CustomList([0, 7, 3, 7])
-        self.assertNotEqual(first + second, third)
+        init_list1 = [3, 5, 6, 7]
+        init_list2 = [1, 2]
+        init_list3 = [0, 7, 3, 7]
+
+        first = CustomList(init_list1.copy())
+        second = CustomList(init_list2.copy())
+
+        third_pred = first + second
+
+        for i, _ in enumerate(init_list3):
+            if i <= len(init_list1) - 1:
+                self.assertEqual(first[i], init_list1[i])
+            if i <= len(init_list2) - 1:
+                self.assertEqual(second[i], init_list2[i])
+
+        self.assertNotEqual(third_pred, CustomList(init_list3))
 
     def test_true_custom_list_same_len_add(self):
 
-        first = CustomList([1, 2])
-        second = CustomList([3, 5])
-        third = CustomList([4, 7])
-        self.assertEqual(first + second, third)
+        init_list1 = [1, 2]
+        init_list2 = [3, 5]
+        init_list3 = [4, 7]
+
+        first = CustomList(init_list1.copy())
+        second = CustomList(init_list2.copy())
+
+        third_pred = first + second
+
+        for i, _ in enumerate(init_list3):
+            if i <= len(init_list1) - 1:
+                self.assertEqual(first[i], init_list1[i])
+            if i <= len(init_list2) - 1:
+                self.assertEqual(second[i], init_list2[i])
+            self.assertEqual(third_pred[i], init_list3[i])
 
     # =================CustomList with list addition=================
 
     def test_true_list_and_custom_list_left_add(self):
 
-        first = [1, 2]
-        second = CustomList([3, 5, 6, 7])
-        third = CustomList([4, 7, 6, 7])
-        self.assertEqual(first + second, third)
+        init_list1 = [1, 2]
+        init_list2 = [3, 5, 6, 7]
+        init_list3 = [4, 7, 6, 7]
+
+        first = init_list1.copy()
+        second = CustomList(init_list2.copy())
+
+        third_pred = first + second
+
+        for i, _ in enumerate(init_list3):
+            if i <= len(init_list1) - 1:
+                self.assertEqual(first[i], init_list1[i])
+            if i <= len(init_list2) - 1:
+                self.assertEqual(second[i], init_list2[i])
+            self.assertEqual(third_pred[i], init_list3[i])
 
     def test_true_list_and_custom_list_right_add(self):
 
-        first = CustomList([1, 2])
-        second = [3, 5, 6, 7]
-        third = CustomList([4, 7, 6, 7])
-        self.assertEqual(first + second, third)
+        init_list1 = [1, 2]
+        init_list2 = [3, 5, 6, 7]
+        init_list3 = [4, 7, 6, 7]
+
+        first = CustomList(init_list1.copy())
+        second = init_list2.copy()
+
+        third_pred = first + second
+
+        for i, _ in enumerate(init_list3):
+            if i <= len(init_list1) - 1:
+                self.assertEqual(first[i], init_list1[i])
+            if i <= len(init_list2) - 1:
+                self.assertEqual(second[i], init_list2[i])
+            self.assertEqual(third_pred[i], init_list3[i])
 
     def test_false_list_and_custom_list_right_add(self):
 
-        first = CustomList([3, 5, 6, 7])
-        second = [1, 2]
-        third = CustomList([0, 7, 3, 7])
-        self.assertNotEqual(first + second, third)
+        init_list1 = [3, 5, 6, 7]
+        init_list2 = [1, 2]
+        init_list3 = [0, 7, 3, 7]
+
+        first = CustomList(init_list1.copy())
+        second = init_list2.copy()
+
+        third_pred = first + second
+
+        for i, _ in enumerate(init_list3):
+            if i <= len(init_list1) - 1:
+                self.assertEqual(first[i], init_list1[i])
+            if i <= len(init_list2) - 1:
+                self.assertEqual(second[i], init_list2[i])
+
+        self.assertNotEqual(third_pred, CustomList(init_list3))
 
     def test_false_list_and_custom_list_left_add(self):
 
-        first = [3, 5, 6, 7]
-        second = CustomList([1, 2])
-        third = CustomList([0, 7, 3, 7])
-        self.assertNotEqual(first + second, third)
+        init_list1 = [3, 5, 6, 7]
+        init_list2 = [1, 2]
+        init_list3 = [0, 7, 3, 7]
+
+        first = init_list1.copy()
+        second = CustomList(init_list2.copy())
+
+        third_pred = first + second
+
+        for i, _ in enumerate(init_list3):
+            if i <= len(init_list1) - 1:
+                self.assertEqual(first[i], init_list1[i])
+            if i <= len(init_list2) - 1:
+                self.assertEqual(second[i], init_list2[i])
+
+        self.assertNotEqual(third_pred, CustomList(init_list3))
 
     # =================CustomList subtraction=================
 
     def test_true_custom_list_left_sub(self):
 
-        first = CustomList([1, 2])
-        second = CustomList([3, 5, 6, 7])
-        third = CustomList([-2, -3, -6, -7])
-        self.assertEqual(first - second, third)
+        init_list1 = [1, 2]
+        init_list2 = [3, 5, 6, 7]
+        init_list3 = [-2, -3, -6, -7]
+
+        first = CustomList(init_list1.copy())
+        second = CustomList(init_list2.copy())
+
+        third_pred = first - second
+
+        for i, _ in enumerate(init_list3):
+            if i <= len(init_list1) - 1:
+                self.assertEqual(first[i], init_list1[i])
+            if i <= len(init_list2) - 1:
+                self.assertEqual(second[i], init_list2[i])
+            self.assertEqual(third_pred[i], init_list3[i])
 
     def test_true_custom_list_right_sub(self):
 
-        first = CustomList([3, 5, 6, 7])
-        second = CustomList([1, 2])
-        third = CustomList([2, 3, 6, 7])
-        self.assertEqual(first - second, third)
+        init_list1 = [3, 5, 6, 7]
+        init_list2 = [1, 2]
+        init_list3 = [2, 3, 6, 7]
+
+        first = CustomList(init_list1.copy())
+        second = CustomList(init_list2.copy())
+
+        third_pred = first - second
+
+        for i, _ in enumerate(init_list3):
+            if i <= len(init_list1) - 1:
+                self.assertEqual(first[i], init_list1[i])
+            if i <= len(init_list2) - 1:
+                self.assertEqual(second[i], init_list2[i])
+            self.assertEqual(third_pred[i], init_list3[i])
 
     def test_false_custom_list_left_sub(self):
 
-        first = CustomList([1, 2])
-        second = CustomList([3, 5, 6, 7])
-        third = CustomList([0, -3, -6, -7])
-        self.assertNotEqual(first - second, third)
+        init_list1 = [1, 2]
+        init_list2 = [3, 5, 6, 7]
+        init_list3 = [0, -3, -6, -7]
+
+        first = CustomList(init_list1.copy())
+        second = CustomList(init_list2.copy())
+
+        third_pred = first - second
+
+        for i, _ in enumerate(init_list3):
+            if i <= len(init_list1) - 1:
+                self.assertEqual(first[i], init_list1[i])
+            if i <= len(init_list2) - 1:
+                self.assertEqual(second[i], init_list2[i])
+
+        self.assertNotEqual(third_pred, CustomList(init_list3))
 
     def test_false_custom_list_right_sub(self):
 
-        first = CustomList([3, 5, 6, 7])
-        second = CustomList([1, 2])
-        third = CustomList([2, 0, 6, 7])
-        self.assertNotEqual(first + second, third)
+        init_list1 = [3, 5, 6, 7]
+        init_list2 = [1, 2]
+        init_list3 = [2, 0, 6, 7]
+
+        first = CustomList(init_list1.copy())
+        second = CustomList(init_list2.copy())
+
+        third_pred = first - second
+
+        for i, _ in enumerate(init_list3):
+            if i <= len(init_list1) - 1:
+                self.assertEqual(first[i], init_list1[i])
+            if i <= len(init_list2) - 1:
+                self.assertEqual(second[i], init_list2[i])
+
+        self.assertNotEqual(third_pred, CustomList(init_list3))
 
     def test_true_custom_list_same_len_sub(self):
 
-        first = CustomList([1, 2])
-        second = CustomList([3, 5])
-        third = CustomList([-2, -3])
-        self.assertEqual(first - second, third)
+        init_list1 = [1, 2]
+        init_list2 = [3, 5]
+        init_list3 = [-2, -3]
+
+        first = CustomList(init_list1.copy())
+        second = CustomList(init_list2.copy())
+
+        third_pred = first - second
+
+        for i, _ in enumerate(init_list3):
+            if i <= len(init_list1) - 1:
+                self.assertEqual(first[i], init_list1[i])
+            if i <= len(init_list2) - 1:
+                self.assertEqual(second[i], init_list2[i])
+            self.assertEqual(third_pred[i], init_list3[i])
 
     # =================CustomList with list subtraction=================
 
     def test_true_list_and_custom_list_left_sub(self):
 
-        first = [1, 2]
-        second = CustomList([3, 5, 6, 7])
-        third = CustomList([-2, -3, -6, -7])
-        self.assertEqual(first - second, third)
+        init_list1 = [1, 2]
+        init_list2 = [3, 5, 6, 7]
+        init_list3 = [-2, -3, -6, -7]
+
+        first = init_list1.copy()
+        second = CustomList(init_list2.copy())
+
+        third_pred = first - second
+
+        for i, _ in enumerate(init_list3):
+            if i <= len(init_list1) - 1:
+                self.assertEqual(first[i], init_list1[i])
+            if i <= len(init_list2) - 1:
+                self.assertEqual(second[i], init_list2[i])
+            self.assertEqual(third_pred[i], init_list3[i])
 
     def test_true_list_and_custom_list_right_sub(self):
 
-        first = CustomList([3, 5, 6, 7])
-        second = [1, 2]
-        third = CustomList([2, 3, 6, 7])
-        self.assertEqual(first - second, third)
+        init_list1 = [3, 5, 6, 7]
+        init_list2 = [1, 2]
+        init_list3 = [2, 3, 6, 7]
+
+        first = CustomList(init_list1.copy())
+        second = init_list2.copy()
+
+        third_pred = first - second
+
+        for i, _ in enumerate(init_list3):
+            if i <= len(init_list1) - 1:
+                self.assertEqual(first[i], init_list1[i])
+            if i <= len(init_list2) - 1:
+                self.assertEqual(second[i], init_list2[i])
+            self.assertEqual(third_pred[i], init_list3[i])
 
     def test_false_list_and_custom_list_right_sub(self):
 
-        first = CustomList([3, 5, 6, 7])
-        second = [1, 2]
-        third = CustomList([0, -3, -6, -7])
-        self.assertNotEqual(first - second, third)
+        init_list1 = [3, 5, 6, 7]
+        init_list2 = [1, 2]
+        init_list3 = [0, -3, -6, -7]
+
+        first = CustomList(init_list1.copy())
+        second = init_list2.copy()
+
+        third_pred = first - second
+
+        for i, _ in enumerate(init_list3):
+            if i <= len(init_list1) - 1:
+                self.assertEqual(first[i], init_list1[i])
+            if i <= len(init_list2) - 1:
+                self.assertEqual(second[i], init_list2[i])
+
+        self.assertNotEqual(third_pred, CustomList(init_list3))
 
     def test_false_list_and_custom_list_left_sub(self):
 
-        first = [3, 5, 6, 7]
-        second = CustomList([1, 2])
-        third = CustomList([2, 0, 6, 7])
-        self.assertNotEqual(first + second, third)
+        init_list1 = [3, 5, 6, 7]
+        init_list2 = [1, 2]
+        init_list3 = [2, 0, 6, 7]
+
+        first = init_list1.copy()
+        second = CustomList(init_list2.copy())
+
+        third_pred = first - second
+
+        for i, _ in enumerate(init_list3):
+            if i <= len(init_list1) - 1:
+                self.assertEqual(first[i], init_list1[i])
+            if i <= len(init_list2) - 1:
+                self.assertEqual(second[i], init_list2[i])
+
+        self.assertNotEqual(third_pred, CustomList(init_list3))
 
     # =================CustomList comparison=================
 
     def test_true_custom_lt(self):
 
-        first = CustomList([1, 2, 3, 4])
-        second = CustomList([40, 6])
+        init_list1 = [1, 2, 3, 4]
+        init_list2 = [40, 6]
+
+        first = CustomList(init_list1.copy())
+        second = CustomList(init_list2.copy())
+
+        for i, _ in enumerate(init_list1):
+            if i <= len(init_list1) - 1:
+                self.assertEqual(first[i], init_list1[i])
+            if i <= len(init_list2) - 1:
+                self.assertEqual(second[i], init_list2[i])
+
         self.assertTrue(first < second)
 
     def test_true_custom_le(self):
 
-        first = CustomList([1, 2, 3, 4])
-        second = CustomList([4, 6])
+        init_list1 = [1, 2, 3, 4]
+        init_list2 = [4, 6]
+
+        first = CustomList(init_list1.copy())
+        second = CustomList(init_list2.copy())
+
+        for i, _ in enumerate(init_list1):
+            if i <= len(init_list1) - 1:
+                self.assertEqual(first[i], init_list1[i])
+            if i <= len(init_list2) - 1:
+                self.assertEqual(second[i], init_list2[i])
+
         self.assertTrue(first <= second)
 
     def test_true_custom_eq(self):
 
-        first = CustomList([1, 2, 3, 4, 5])
-        second = CustomList([4, 5, 6])
+        init_list1 = [1, 2, 3, 4, 5]
+        init_list2 = [4, 5, 6]
+
+        first = CustomList(init_list1.copy())
+        second = CustomList(init_list2.copy())
+
+        for i, _ in enumerate(init_list1):
+            if i <= len(init_list1) - 1:
+                self.assertEqual(first[i], init_list1[i])
+            if i <= len(init_list2) - 1:
+                self.assertEqual(second[i], init_list2[i])
+
         self.assertTrue(first == second)
 
     def test_true_custom_ne(self):
 
-        first = CustomList([1, 2, 3, 3])
-        second = CustomList([1, 2, 3])
+        init_list1 = [1, 2, 3, 3]
+        init_list2 = [1, 2, 3]
+
+        first = CustomList(init_list1.copy())
+        second = CustomList(init_list2.copy())
+
+        for i, _ in enumerate(init_list1):
+            if i <= len(init_list1) - 1:
+                self.assertEqual(first[i], init_list1[i])
+            if i <= len(init_list2) - 1:
+                self.assertEqual(second[i], init_list2[i])
+
         self.assertTrue(first != second)
 
     def test_true_custom_gt(self):
 
-        first = CustomList([100, 2, 3, 3])
-        second = CustomList([1, 2, 3])
+        init_list1 = [100, 2, 3, 3]
+        init_list2 = [1, 2, 3]
+
+        first = CustomList(init_list1.copy())
+        second = CustomList(init_list2.copy())
+
+        for i, _ in enumerate(init_list1):
+            if i <= len(init_list1) - 1:
+                self.assertEqual(first[i], init_list1[i])
+            if i <= len(init_list2) - 1:
+                self.assertEqual(second[i], init_list2[i])
+
         self.assertTrue(first > second)
 
     def test_true_custom_ge(self):
 
-        first = CustomList([100, 2, 3, 2])
-        second = CustomList([1, 2, 3, 50, 50])
+        init_list1 = [100, 2, 3, 2]
+        init_list2 = [1, 2, 3, 50, 50]
+
+        first = CustomList(init_list1.copy())
+        second = CustomList(init_list2.copy())
+
+        for i, _ in enumerate(init_list1):
+            if i <= len(init_list1) - 1:
+                self.assertEqual(first[i], init_list1[i])
+            if i <= len(init_list2) - 1:
+                self.assertEqual(second[i], init_list2[i])
+
         self.assertTrue(first >= second)
 
     # =================CustomList print=================
