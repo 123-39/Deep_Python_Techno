@@ -38,6 +38,51 @@ class TestDescriptors(unittest.TestCase):
         with self.assertRaises(Exception):
             Data(5, 'kek', -10)
 
+    def test_new_bad_num(self):
+
+        data = Data(100, 'abc', 1)
+        with self.assertRaises(Exception):
+            data.num = 'a'
+
+        self.assertEqual(data.num, 100)
+
+    def test_new_good_num(self):
+
+        data = Data(100, 'abc', 1)
+        data.num = 42
+
+        self.assertEqual(data.num, 42)
+
+    def test_new_bad_name(self):
+
+        data = Data(100, 'abc', 1)
+        with self.assertRaises(Exception):
+            data.name = 42
+
+        self.assertEqual(data.name, 'abc')
+
+    def test_new_good_name(self):
+
+        data = Data(100, 'abc', 1)
+        data.name = 'zxy'
+
+        self.assertEqual(data.name, 'zxy')
+
+    def test_new_bad_price(self):
+
+        data = Data(100, 'abc', 1)
+        with self.assertRaises(Exception):
+            data.price = -3
+
+        self.assertEqual(data.price, 1)
+
+    def test_new_good_price(self):
+
+        data = Data(100, 'abc', 1)
+        data.price = 5
+
+        self.assertEqual(data.price, 5)
+
 
 if __name__ == "__main__":
 

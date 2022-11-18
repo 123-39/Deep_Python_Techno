@@ -10,7 +10,7 @@ class CustomMeta(type):
     def __new__(cls, name, bases, classdict):
         custom_class_dict = {}
         for method, val in classdict.items():
-            if not method.startswith('__'):
+            if not (method.startswith('__') and method.endswith('__')):
                 custom_class_dict["custom_" + method] = val
             else:
                 custom_class_dict[method] = val
