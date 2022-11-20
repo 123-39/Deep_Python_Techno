@@ -1,0 +1,321 @@
+[2022-11-20 19:56:07,168] lru_cache INFO   : Adding new element with key 0 in cache
+[2022-11-20 19:56:07,168] lru_cache INFO   : Adding new element with key 1 in cache
+[2022-11-20 19:56:07,168] lru_cache INFO   : Adding new element with key 2 in cache
+[2022-11-20 19:56:07,168] lru_cache INFO   : Adding new element with key 3 in cache
+[2022-11-20 19:56:07,169] lru_cache INFO   : Adding new element with key 4 in cache
+[2022-11-20 19:56:07,169] lru_cache INFO   : Adding new element with key 5 in cache
+[2022-11-20 19:56:07,169] lru_cache INFO   : Adding new element with key 6 in cache
+[2022-11-20 19:56:07,169] lru_cache INFO   : Adding new element with key 7 in cache
+[2022-11-20 19:56:07,169] lru_cache INFO   : Adding new element with key 8 in cache
+[2022-11-20 19:56:07,169] lru_cache INFO   : Adding new element with key 9 in cache
+[2022-11-20 19:56:07,169] lru_cache INFO   : Adding new element with key 10 in cache
+[2022-11-20 19:56:07,169] lru_cache INFO   : Adding new element with key 11 in cache
+[2022-11-20 19:59:31,789] lru_cache INFO   : Adding new element with key 0 in cache
+[2022-11-20 19:59:31,789] lru_cache INFO   : Adding new element with key 1 in cache
+[2022-11-20 19:59:31,789] lru_cache INFO   : Adding new element with key 2 in cache
+[2022-11-20 19:59:31,789] lru_cache INFO   : Adding new element with key 3 in cache
+[2022-11-20 19:59:31,789] lru_cache INFO   : Adding new element with key 4 in cache
+[2022-11-20 19:59:31,789] lru_cache INFO   : Adding new element with key 5 in cache
+[2022-11-20 19:59:31,789] lru_cache INFO   : Adding new element with key 6 in cache
+[2022-11-20 19:59:31,789] lru_cache INFO   : Adding new element with key 7 in cache
+[2022-11-20 19:59:31,789] lru_cache INFO   : Adding new element with key 8 in cache
+[2022-11-20 19:59:31,790] lru_cache INFO   : Adding new element with key 9 in cache
+[2022-11-20 19:59:31,790] lru_cache INFO   : Adding new element with key 10 in cache
+[2022-11-20 19:59:31,790] lru_cache INFO   : Adding new element with key 11 in cache
+[2022-11-20 20:00:19,946] lru_cache INFO   : Adding new element with key 0 in cache
+[2022-11-20 20:00:19,946] lru_cache INFO   : Adding new element with key 1 in cache
+[2022-11-20 20:00:19,946] lru_cache INFO   : Adding new element with key 2 in cache
+[2022-11-20 20:00:19,946] lru_cache INFO   : Adding new element with key 3 in cache
+[2022-11-20 20:00:19,946] lru_cache INFO   : Adding new element with key 4 in cache
+[2022-11-20 20:00:19,946] lru_cache INFO   : Adding new element with key 5 in cache
+[2022-11-20 20:00:19,946] lru_cache INFO   : Adding new element with key 6 in cache
+[2022-11-20 20:00:19,946] lru_cache INFO   : Adding new element with key 7 in cache
+[2022-11-20 20:00:19,947] lru_cache INFO   : Adding new element with key 8 in cache
+[2022-11-20 20:00:19,947] lru_cache INFO   : Adding new element with key 9 in cache
+[2022-11-20 20:00:19,947] lru_cache INFO   : Adding new element with key 10 in cache
+[2022-11-20 20:00:19,947] lru_cache INFO   : Adding new element with key 11 in cache
+[2022-11-20 20:00:19,947] lru_cache INFO   : Was return element 111111111111111111111111 with key 11
+[2022-11-20 20:00:19,947] lru_cache INFO   : Was return element 1010101010101010101010 with key 10
+[2022-11-20 20:00:19,947] lru_cache INFO   : Was return element 9999999999 with key 9
+[2022-11-20 20:00:19,947] lru_cache WARNING: Cache is full
+[2022-11-20 20:00:19,947] lru_cache INFO   : Old element was removed
+[2022-11-20 20:00:19,947] lru_cache INFO   : Adding new element with key 12 in cache
+[2022-11-20 20:00:19,947] lru_cache WARNING: Cache is full
+[2022-11-20 20:00:19,947] lru_cache INFO   : Old element was removed
+[2022-11-20 20:00:19,947] lru_cache INFO   : Adding new element with key 13 in cache
+[2022-11-20 20:00:19,947] lru_cache WARNING: Cache is full
+[2022-11-20 20:00:19,947] lru_cache INFO   : Old element was removed
+[2022-11-20 20:00:19,947] lru_cache INFO   : Adding new element with key 14 in cache
+[2022-11-20 20:00:19,948] lru_cache WARNING: Cache is full
+[2022-11-20 20:00:19,948] lru_cache INFO   : Old element was removed
+[2022-11-20 20:00:19,948] lru_cache INFO   : Adding new element with key 15 in cache
+[2022-11-20 20:00:19,948] lru_cache WARNING: Cache is full
+[2022-11-20 20:00:19,948] lru_cache INFO   : Old element was removed
+[2022-11-20 20:00:19,948] lru_cache INFO   : Adding new element with key 16 in cache
+[2022-11-20 20:00:19,948] lru_cache INFO   : Key 13 already exist in cache
+[2022-11-20 20:00:19,948] lru_cache INFO   : Key 13 was removed
+[2022-11-20 20:00:19,948] lru_cache INFO   : Adding new element with key 13 in cache
+[2022-11-20 20:02:18,899] lru_cache INFO   : Adding new element with key 0 in cache
+[2022-11-20 20:02:18,899] lru_cache INFO   : Adding new element with key 1 in cache
+[2022-11-20 20:02:18,899] lru_cache INFO   : Adding new element with key 2 in cache
+[2022-11-20 20:02:18,899] lru_cache INFO   : Adding new element with key 3 in cache
+[2022-11-20 20:02:18,899] lru_cache INFO   : Adding new element with key 4 in cache
+[2022-11-20 20:02:18,899] lru_cache INFO   : Adding new element with key 5 in cache
+[2022-11-20 20:02:18,899] lru_cache INFO   : Adding new element with key 6 in cache
+[2022-11-20 20:02:18,899] lru_cache INFO   : Adding new element with key 7 in cache
+[2022-11-20 20:02:18,899] lru_cache INFO   : Adding new element with key 8 in cache
+[2022-11-20 20:02:18,900] lru_cache INFO   : Adding new element with key 9 in cache
+[2022-11-20 20:02:18,900] lru_cache INFO   : Adding new element with key 10 in cache
+[2022-11-20 20:02:18,900] lru_cache INFO   : Adding new element with key 11 in cache
+[2022-11-20 20:02:18,900] lru_cache INFO   : Was return element 111111111111111111111111 with key 11
+[2022-11-20 20:02:18,900] lru_cache INFO   : Was return element 1010101010101010101010 with key 10
+[2022-11-20 20:02:18,900] lru_cache INFO   : Was return element 9999999999 with key 9
+[2022-11-20 20:02:18,900] lru_cache WARNING: Cache is full
+[2022-11-20 20:02:18,900] lru_cache INFO   : Old element was removed
+[2022-11-20 20:02:18,900] lru_cache INFO   : Adding new element with key 12 in cache
+[2022-11-20 20:02:18,900] lru_cache WARNING: Cache is full
+[2022-11-20 20:02:18,900] lru_cache INFO   : Old element was removed
+[2022-11-20 20:02:18,900] lru_cache INFO   : Adding new element with key 13 in cache
+[2022-11-20 20:02:18,900] lru_cache WARNING: Cache is full
+[2022-11-20 20:02:18,901] lru_cache INFO   : Old element was removed
+[2022-11-20 20:02:18,901] lru_cache INFO   : Adding new element with key 14 in cache
+[2022-11-20 20:02:18,901] lru_cache WARNING: Cache is full
+[2022-11-20 20:02:18,901] lru_cache INFO   : Old element was removed
+[2022-11-20 20:02:18,901] lru_cache INFO   : Adding new element with key 15 in cache
+[2022-11-20 20:02:18,901] lru_cache WARNING: Cache is full
+[2022-11-20 20:02:18,901] lru_cache INFO   : Old element was removed
+[2022-11-20 20:02:18,901] lru_cache INFO   : Adding new element with key 16 in cache
+[2022-11-20 20:02:18,901] lru_cache INFO   : Key 13 already exist in cache
+[2022-11-20 20:02:18,901] lru_cache INFO   : Key 13 was removed
+[2022-11-20 20:02:18,901] lru_cache INFO   : Adding new element with key 13 in cache
+[2022-11-20 20:02:21,607] lru_cache INFO   : Adding new element with key 0 in cache
+[2022-11-20 20:02:21,608] lru_cache INFO   : Adding new element with key 1 in cache
+[2022-11-20 20:02:21,608] lru_cache INFO   : Adding new element with key 2 in cache
+[2022-11-20 20:02:21,608] lru_cache INFO   : Adding new element with key 3 in cache
+[2022-11-20 20:02:21,608] lru_cache INFO   : Adding new element with key 4 in cache
+[2022-11-20 20:02:21,608] lru_cache INFO   : Adding new element with key 5 in cache
+[2022-11-20 20:02:21,608] lru_cache INFO   : Adding new element with key 6 in cache
+[2022-11-20 20:02:21,608] lru_cache INFO   : Adding new element with key 7 in cache
+[2022-11-20 20:02:21,608] lru_cache INFO   : Adding new element with key 8 in cache
+[2022-11-20 20:02:21,609] lru_cache INFO   : Adding new element with key 9 in cache
+[2022-11-20 20:02:21,609] lru_cache INFO   : Adding new element with key 10 in cache
+[2022-11-20 20:02:21,609] lru_cache INFO   : Adding new element with key 11 in cache
+[2022-11-20 20:02:21,609] lru_cache INFO   : Was return element 111111111111111111111111 with key 11
+[2022-11-20 20:02:21,609] lru_cache INFO   : Was return element 1010101010101010101010 with key 10
+[2022-11-20 20:02:21,609] lru_cache INFO   : Was return element 9999999999 with key 9
+[2022-11-20 20:02:21,609] lru_cache WARNING: Cache is full
+[2022-11-20 20:02:21,609] lru_cache INFO   : Old element was removed
+[2022-11-20 20:02:21,610] lru_cache INFO   : Adding new element with key 12 in cache
+[2022-11-20 20:02:21,610] lru_cache WARNING: Cache is full
+[2022-11-20 20:02:21,610] lru_cache INFO   : Old element was removed
+[2022-11-20 20:02:21,610] lru_cache INFO   : Adding new element with key 13 in cache
+[2022-11-20 20:02:21,610] lru_cache WARNING: Cache is full
+[2022-11-20 20:02:21,610] lru_cache INFO   : Old element was removed
+[2022-11-20 20:02:21,610] lru_cache INFO   : Adding new element with key 14 in cache
+[2022-11-20 20:02:21,611] lru_cache WARNING: Cache is full
+[2022-11-20 20:02:21,611] lru_cache INFO   : Old element was removed
+[2022-11-20 20:02:21,611] lru_cache INFO   : Adding new element with key 15 in cache
+[2022-11-20 20:02:21,611] lru_cache WARNING: Cache is full
+[2022-11-20 20:02:21,611] lru_cache INFO   : Old element was removed
+[2022-11-20 20:02:21,611] lru_cache INFO   : Adding new element with key 16 in cache
+[2022-11-20 20:02:21,611] lru_cache INFO   : Key 13 already exist in cache
+[2022-11-20 20:02:21,611] lru_cache INFO   : Key 13 was removed
+[2022-11-20 20:02:21,611] lru_cache INFO   : Adding new element with key 13 in cache
+[2022-11-20 20:03:12,875] lru_cache INFO   : Adding new element 0 with key 0 in cache
+[2022-11-20 20:03:12,875] lru_cache INFO   : Adding new element 11 with key 1 in cache
+[2022-11-20 20:03:12,876] lru_cache INFO   : Adding new element 222 with key 2 in cache
+[2022-11-20 20:03:12,876] lru_cache INFO   : Adding new element 3333 with key 3 in cache
+[2022-11-20 20:03:12,876] lru_cache INFO   : Adding new element 44444 with key 4 in cache
+[2022-11-20 20:03:12,876] lru_cache INFO   : Adding new element 555555 with key 5 in cache
+[2022-11-20 20:03:12,876] lru_cache INFO   : Adding new element 6666666 with key 6 in cache
+[2022-11-20 20:03:12,877] lru_cache INFO   : Adding new element 77777777 with key 7 in cache
+[2022-11-20 20:03:12,877] lru_cache INFO   : Adding new element 888888888 with key 8 in cache
+[2022-11-20 20:03:12,877] lru_cache INFO   : Adding new element 9999999999 with key 9 in cache
+[2022-11-20 20:03:12,877] lru_cache INFO   : Adding new element 1010101010101010101010 with key 10 in cache
+[2022-11-20 20:03:12,877] lru_cache INFO   : Adding new element 111111111111111111111111 with key 11 in cache
+[2022-11-20 20:03:12,877] lru_cache INFO   : Was return element 111111111111111111111111 with key 11
+[2022-11-20 20:03:12,877] lru_cache INFO   : Was return element 1010101010101010101010 with key 10
+[2022-11-20 20:03:12,877] lru_cache INFO   : Was return element 9999999999 with key 9
+[2022-11-20 20:03:12,878] lru_cache WARNING: Cache is full
+[2022-11-20 20:03:12,878] lru_cache INFO   : Old element was removed
+[2022-11-20 20:03:12,878] lru_cache INFO   : Adding new element 12 with key 12 in cache
+[2022-11-20 20:03:12,878] lru_cache WARNING: Cache is full
+[2022-11-20 20:03:12,878] lru_cache INFO   : Old element was removed
+[2022-11-20 20:03:12,878] lru_cache INFO   : Adding new element 13 with key 13 in cache
+[2022-11-20 20:03:12,878] lru_cache WARNING: Cache is full
+[2022-11-20 20:03:12,878] lru_cache INFO   : Old element was removed
+[2022-11-20 20:03:12,878] lru_cache INFO   : Adding new element 14 with key 14 in cache
+[2022-11-20 20:03:12,879] lru_cache WARNING: Cache is full
+[2022-11-20 20:03:12,879] lru_cache INFO   : Old element was removed
+[2022-11-20 20:03:12,879] lru_cache INFO   : Adding new element 15 with key 15 in cache
+[2022-11-20 20:03:12,879] lru_cache WARNING: Cache is full
+[2022-11-20 20:03:12,879] lru_cache INFO   : Old element was removed
+[2022-11-20 20:03:12,879] lru_cache INFO   : Adding new element 16 with key 16 in cache
+[2022-11-20 20:03:12,879] lru_cache INFO   : Key 13 already exist in cache
+[2022-11-20 20:03:12,879] lru_cache INFO   : Key 13 was removed
+[2022-11-20 20:03:12,880] lru_cache INFO   : Adding new element 11 with key 13 in cache
+[2022-11-20 20:04:57,275] lru_cache INFO   : Adding new element 0 with key 0 in cache
+[2022-11-20 20:04:57,275] lru_cache INFO   : Adding new element 11 with key 1 in cache
+[2022-11-20 20:04:57,275] lru_cache INFO   : Adding new element 222 with key 2 in cache
+[2022-11-20 20:04:57,275] lru_cache INFO   : Adding new element 3333 with key 3 in cache
+[2022-11-20 20:04:57,275] lru_cache INFO   : Adding new element 44444 with key 4 in cache
+[2022-11-20 20:04:57,275] lru_cache INFO   : Adding new element 555555 with key 5 in cache
+[2022-11-20 20:04:57,276] lru_cache INFO   : Adding new element 6666666 with key 6 in cache
+[2022-11-20 20:04:57,276] lru_cache INFO   : Adding new element 77777777 with key 7 in cache
+[2022-11-20 20:04:57,276] lru_cache INFO   : Adding new element 888888888 with key 8 in cache
+[2022-11-20 20:04:57,276] lru_cache INFO   : Adding new element 9999999999 with key 9 in cache
+[2022-11-20 20:04:57,276] lru_cache INFO   : Adding new element 1010101010101010101010 with key 10 in cache
+[2022-11-20 20:04:57,276] lru_cache INFO   : Adding new element 111111111111111111111111 with key 11 in cache
+[2022-11-20 20:04:57,276] lru_cache INFO   : Was return element 111111111111111111111111 with key 11
+[2022-11-20 20:04:57,276] lru_cache INFO   : Was return element 1010101010101010101010 with key 10
+[2022-11-20 20:04:57,277] lru_cache INFO   : Was return element 9999999999 with key 9
+[2022-11-20 20:04:57,277] lru_cache WARNING: Cache is full
+[2022-11-20 20:04:57,277] lru_cache INFO   : Key 1 was removed
+[2022-11-20 20:04:57,277] lru_cache INFO   : Adding new element 12 with key 12 in cache
+[2022-11-20 20:04:57,277] lru_cache WARNING: Cache is full
+[2022-11-20 20:04:57,277] lru_cache INFO   : Key 2 was removed
+[2022-11-20 20:04:57,277] lru_cache INFO   : Adding new element 13 with key 13 in cache
+[2022-11-20 20:04:57,277] lru_cache WARNING: Cache is full
+[2022-11-20 20:04:57,278] lru_cache INFO   : Key 3 was removed
+[2022-11-20 20:04:57,278] lru_cache INFO   : Adding new element 14 with key 14 in cache
+[2022-11-20 20:04:57,278] lru_cache WARNING: Cache is full
+[2022-11-20 20:04:57,278] lru_cache INFO   : Key 4 was removed
+[2022-11-20 20:04:57,278] lru_cache INFO   : Adding new element 15 with key 15 in cache
+[2022-11-20 20:04:57,278] lru_cache WARNING: Cache is full
+[2022-11-20 20:04:57,278] lru_cache INFO   : Key 5 was removed
+[2022-11-20 20:04:57,278] lru_cache INFO   : Adding new element 16 with key 16 in cache
+[2022-11-20 20:04:57,279] lru_cache INFO   : Key 13 already exist in cache
+[2022-11-20 20:04:57,279] lru_cache INFO   : Key 13 was removed
+[2022-11-20 20:04:57,279] lru_cache INFO   : Adding new element 11 with key 13 in cache
+[2022-11-20 20:07:29,601] lru_cache INFO   : Adding new element elem_0 with key 0 in cache
+[2022-11-20 20:07:29,601] lru_cache INFO   : Adding new element elem_1 with key 1 in cache
+[2022-11-20 20:07:29,601] lru_cache INFO   : Adding new element elem_2 with key 2 in cache
+[2022-11-20 20:07:29,601] lru_cache INFO   : Adding new element elem_3 with key 3 in cache
+[2022-11-20 20:07:29,602] lru_cache INFO   : Adding new element elem_4 with key 4 in cache
+[2022-11-20 20:07:29,602] lru_cache INFO   : Adding new element elem_5 with key 5 in cache
+[2022-11-20 20:07:29,602] lru_cache INFO   : Adding new element elem_6 with key 6 in cache
+[2022-11-20 20:07:29,602] lru_cache INFO   : Adding new element elem_7 with key 7 in cache
+[2022-11-20 20:07:29,602] lru_cache INFO   : Adding new element elem_8 with key 8 in cache
+[2022-11-20 20:07:29,602] lru_cache INFO   : Adding new element elem_9 with key 9 in cache
+[2022-11-20 20:07:29,602] lru_cache INFO   : Adding new element elem_10 with key 10 in cache
+[2022-11-20 20:07:29,602] lru_cache INFO   : Adding new element elem_11 with key 11 in cache
+[2022-11-20 20:07:29,602] lru_cache INFO   : Was return element elem_11 with key 11
+[2022-11-20 20:07:29,602] lru_cache INFO   : Was return element elem_10 with key 10
+[2022-11-20 20:07:29,603] lru_cache INFO   : Was return element elem_9 with key 9
+[2022-11-20 20:07:29,603] lru_cache WARNING: Cache is full
+[2022-11-20 20:07:29,603] lru_cache INFO   : Element with key 1 was removed
+[2022-11-20 20:07:29,603] lru_cache INFO   : Adding new element 12 with key 12 in cache
+[2022-11-20 20:07:29,603] lru_cache WARNING: Cache is full
+[2022-11-20 20:07:29,603] lru_cache INFO   : Element with key 2 was removed
+[2022-11-20 20:07:29,603] lru_cache INFO   : Adding new element 13 with key 13 in cache
+[2022-11-20 20:07:29,603] lru_cache WARNING: Cache is full
+[2022-11-20 20:07:29,604] lru_cache INFO   : Element with key 3 was removed
+[2022-11-20 20:07:29,604] lru_cache INFO   : Adding new element 14 with key 14 in cache
+[2022-11-20 20:07:29,604] lru_cache WARNING: Cache is full
+[2022-11-20 20:07:29,604] lru_cache INFO   : Element with key 4 was removed
+[2022-11-20 20:07:29,604] lru_cache INFO   : Adding new element 15 with key 15 in cache
+[2022-11-20 20:07:29,604] lru_cache WARNING: Cache is full
+[2022-11-20 20:07:29,604] lru_cache INFO   : Element with key 5 was removed
+[2022-11-20 20:07:29,604] lru_cache INFO   : Adding new element 16 with key 16 in cache
+[2022-11-20 20:07:29,604] lru_cache INFO   : Key 13 already exist in cache
+[2022-11-20 20:07:29,604] lru_cache INFO   : Element with key 13 was removed
+[2022-11-20 20:07:29,605] lru_cache INFO   : Adding new element 11 with key 13 in cache
+[2022-11-20 20:11:41,131] lru_cache INFO   : Adding new element elem_0 with key 0 in cache
+[2022-11-20 20:11:41,131] lru_cache INFO   : Adding new element elem_1 with key 1 in cache
+[2022-11-20 20:11:41,131] lru_cache INFO   : Adding new element elem_2 with key 2 in cache
+[2022-11-20 20:11:41,131] lru_cache INFO   : Adding new element elem_3 with key 3 in cache
+[2022-11-20 20:11:41,131] lru_cache INFO   : Adding new element elem_4 with key 4 in cache
+[2022-11-20 20:11:41,132] lru_cache INFO   : Adding new element elem_5 with key 5 in cache
+[2022-11-20 20:11:41,132] lru_cache INFO   : Adding new element elem_6 with key 6 in cache
+[2022-11-20 20:11:41,132] lru_cache INFO   : Adding new element elem_7 with key 7 in cache
+[2022-11-20 20:11:41,132] lru_cache INFO   : Adding new element elem_8 with key 8 in cache
+[2022-11-20 20:11:41,132] lru_cache INFO   : Adding new element elem_9 with key 9 in cache
+[2022-11-20 20:11:41,132] lru_cache INFO   : Adding new element elem_10 with key 10 in cache
+[2022-11-20 20:11:41,132] lru_cache INFO   : Adding new element elem_11 with key 11 in cache
+[2022-11-20 20:11:41,132] lru_cache INFO   : Was return element elem_11 with key 11
+[2022-11-20 20:11:41,132] lru_cache INFO   : Was return element elem_10 with key 10
+[2022-11-20 20:11:41,132] lru_cache INFO   : Was return element elem_9 with key 9
+[2022-11-20 20:11:41,133] lru_cache WARNING: Cache is full
+[2022-11-20 20:11:41,133] lru_cache INFO   : Element with key 1 was removed
+[2022-11-20 20:11:41,133] lru_cache INFO   : Adding new element new_elem_12 with key 12 in cache
+[2022-11-20 20:11:41,133] lru_cache WARNING: Cache is full
+[2022-11-20 20:11:41,133] lru_cache INFO   : Element with key 2 was removed
+[2022-11-20 20:11:41,133] lru_cache INFO   : Adding new element new_elem_13 with key 13 in cache
+[2022-11-20 20:11:41,133] lru_cache WARNING: Cache is full
+[2022-11-20 20:11:41,133] lru_cache INFO   : Element with key 3 was removed
+[2022-11-20 20:11:41,133] lru_cache INFO   : Adding new element new_elem_14 with key 14 in cache
+[2022-11-20 20:11:41,134] lru_cache WARNING: Cache is full
+[2022-11-20 20:11:41,134] lru_cache INFO   : Element with key 4 was removed
+[2022-11-20 20:11:41,134] lru_cache INFO   : Adding new element new_elem_15 with key 15 in cache
+[2022-11-20 20:11:41,134] lru_cache WARNING: Cache is full
+[2022-11-20 20:11:41,134] lru_cache INFO   : Element with key 5 was removed
+[2022-11-20 20:11:41,134] lru_cache INFO   : Adding new element new_elem_16 with key 16 in cache
+[2022-11-20 20:11:41,134] lru_cache INFO   : Key 13 already exist in cache
+[2022-11-20 20:11:41,134] lru_cache INFO   : Element with key 13 was removed
+[2022-11-20 20:11:41,134] lru_cache INFO   : Adding new element 11 with key 13 in cache
+[2022-11-20 20:11:58,801] lru_cache INFO   : Adding new element elem_0 with key 0 in cache
+[2022-11-20 20:11:58,801] lru_cache INFO   : Adding new element elem_1 with key 1 in cache
+[2022-11-20 20:11:58,801] lru_cache INFO   : Adding new element elem_2 with key 2 in cache
+[2022-11-20 20:11:58,801] lru_cache INFO   : Adding new element elem_3 with key 3 in cache
+[2022-11-20 20:11:58,801] lru_cache INFO   : Adding new element elem_4 with key 4 in cache
+[2022-11-20 20:11:58,801] lru_cache INFO   : Adding new element elem_5 with key 5 in cache
+[2022-11-20 20:11:58,802] lru_cache INFO   : Adding new element elem_6 with key 6 in cache
+[2022-11-20 20:11:58,802] lru_cache INFO   : Adding new element elem_7 with key 7 in cache
+[2022-11-20 20:11:58,802] lru_cache INFO   : Adding new element elem_8 with key 8 in cache
+[2022-11-20 20:11:58,802] lru_cache INFO   : Adding new element elem_9 with key 9 in cache
+[2022-11-20 20:11:58,802] lru_cache INFO   : Adding new element elem_10 with key 10 in cache
+[2022-11-20 20:11:58,802] lru_cache INFO   : Adding new element elem_11 with key 11 in cache
+[2022-11-20 20:11:58,802] lru_cache INFO   : Was return element elem_11 with key 11
+[2022-11-20 20:11:58,802] lru_cache INFO   : Was return element elem_10 with key 10
+[2022-11-20 20:11:58,802] lru_cache INFO   : Was return element elem_9 with key 9
+[2022-11-20 20:11:58,802] lru_cache WARNING: Cache is full
+[2022-11-20 20:11:58,802] lru_cache INFO   : Element with key 1 was removed
+[2022-11-20 20:11:58,803] lru_cache INFO   : Adding new element new_elem_12 with key 12 in cache
+[2022-11-20 20:11:58,803] lru_cache WARNING: Cache is full
+[2022-11-20 20:11:58,803] lru_cache INFO   : Element with key 2 was removed
+[2022-11-20 20:11:58,803] lru_cache INFO   : Adding new element new_elem_13 with key 13 in cache
+[2022-11-20 20:11:58,803] lru_cache WARNING: Cache is full
+[2022-11-20 20:11:58,803] lru_cache INFO   : Element with key 3 was removed
+[2022-11-20 20:11:58,803] lru_cache INFO   : Adding new element new_elem_14 with key 14 in cache
+[2022-11-20 20:11:58,803] lru_cache WARNING: Cache is full
+[2022-11-20 20:11:58,803] lru_cache INFO   : Element with key 4 was removed
+[2022-11-20 20:11:58,803] lru_cache INFO   : Adding new element new_elem_15 with key 15 in cache
+[2022-11-20 20:11:58,803] lru_cache WARNING: Cache is full
+[2022-11-20 20:11:58,803] lru_cache INFO   : Element with key 5 was removed
+[2022-11-20 20:11:58,804] lru_cache INFO   : Adding new element new_elem_16 with key 16 in cache
+[2022-11-20 20:11:58,804] lru_cache INFO   : Key 13 already exist in cache
+[2022-11-20 20:11:58,804] lru_cache INFO   : Element with key 13 was removed
+[2022-11-20 20:11:58,804] lru_cache INFO   : Adding new element 11 with key 13 in cache
+[2022-11-20 20:14:33,279] lru_cache INFO   : Adding new element elem_0 with key 0 in cache
+[2022-11-20 20:14:33,279] lru_cache INFO   : Adding new element elem_1 with key 1 in cache
+[2022-11-20 20:14:33,280] lru_cache INFO   : Adding new element elem_2 with key 2 in cache
+[2022-11-20 20:14:33,280] lru_cache INFO   : Adding new element elem_3 with key 3 in cache
+[2022-11-20 20:14:33,280] lru_cache INFO   : Adding new element elem_4 with key 4 in cache
+[2022-11-20 20:14:33,280] lru_cache INFO   : Adding new element elem_5 with key 5 in cache
+[2022-11-20 20:14:33,280] lru_cache INFO   : Adding new element elem_6 with key 6 in cache
+[2022-11-20 20:14:33,280] lru_cache INFO   : Adding new element elem_7 with key 7 in cache
+[2022-11-20 20:14:33,280] lru_cache INFO   : Adding new element elem_8 with key 8 in cache
+[2022-11-20 20:14:33,280] lru_cache INFO   : Adding new element elem_9 with key 9 in cache
+[2022-11-20 20:14:33,280] lru_cache INFO   : Adding new element elem_10 with key 10 in cache
+[2022-11-20 20:14:33,280] lru_cache INFO   : Adding new element elem_11 with key 11 in cache
+[2022-11-20 20:14:33,280] lru_cache INFO   : Was return element elem_11 with key 11
+[2022-11-20 20:14:33,280] lru_cache INFO   : Was return element elem_10 with key 10
+[2022-11-20 20:14:33,280] lru_cache INFO   : Was return element elem_9 with key 9
+[2022-11-20 20:14:33,281] lru_cache WARNING: Cache is full
+[2022-11-20 20:14:33,281] lru_cache INFO   : Element with key 1 was removed
+[2022-11-20 20:14:33,281] lru_cache INFO   : Adding new element new_elem_12 with key 12 in cache
+[2022-11-20 20:14:33,281] lru_cache WARNING: Cache is full
+[2022-11-20 20:14:33,281] lru_cache INFO   : Element with key 2 was removed
+[2022-11-20 20:14:33,281] lru_cache INFO   : Adding new element new_elem_13 with key 13 in cache
+[2022-11-20 20:14:33,281] lru_cache WARNING: Cache is full
+[2022-11-20 20:14:33,281] lru_cache INFO   : Element with key 3 was removed
+[2022-11-20 20:14:33,281] lru_cache INFO   : Adding new element new_elem_14 with key 14 in cache
+[2022-11-20 20:14:33,281] lru_cache WARNING: Cache is full
+[2022-11-20 20:14:33,281] lru_cache INFO   : Element with key 4 was removed
+[2022-11-20 20:14:33,281] lru_cache INFO   : Adding new element new_elem_15 with key 15 in cache
+[2022-11-20 20:14:33,281] lru_cache WARNING: Cache is full
+[2022-11-20 20:14:33,281] lru_cache INFO   : Element with key 5 was removed
+[2022-11-20 20:14:33,282] lru_cache INFO   : Adding new element new_elem_16 with key 16 in cache
+[2022-11-20 20:14:33,282] lru_cache INFO   : Key 13 already exist in cache
+[2022-11-20 20:14:33,282] lru_cache INFO   : Element with key 13 was removed
+[2022-11-20 20:14:33,282] lru_cache INFO   : Adding new element 11 with key 13 in cache
