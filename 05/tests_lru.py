@@ -86,10 +86,27 @@ class TestLRUCache(unittest.TestCase):
         self.assertEqual(cache.get("k1"), "val1")
         self.assertEqual(cache.get("k2"), "val2")
 
-        cache.set("k2", "val2_new")
+        cache.set("k1", "val1_new")
+        cache.set("k3", "val3")
+
+        self.assertEqual(cache.get("k1"), "val1_new")
+        self.assertEqual(cache.get("k2"), None)
+        self.assertEqual(cache.get("k3"), "val3")
+
+    def test_min_capacity(self):
+
+        cache = LRUCache(1)
+
+        cache.set("k1", "val1")
+        cache.set("k2", "val2")
+
+        self.assertEqual(cache.get("k1"), None)
+        self.assertEqual(cache.get("k2"), "val2")
+
+        cache.set("k1", "val1")
 
         self.assertEqual(cache.get("k1"), "val1")
-        self.assertEqual(cache.get("k2"), "val2_new")
+        self.assertEqual(cache.get("k2"), None)
 
 
 if __name__ == "__main__":
