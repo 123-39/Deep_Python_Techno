@@ -59,6 +59,38 @@ class TestLRUCache(unittest.TestCase):
         self.assertEqual(cache.get("k1"), "val1")
         self.assertEqual(cache.get("k2"), "val4")
 
+    def test_like_in_example(self):
+
+        cache = LRUCache(2)
+
+        cache.set("k1", "val1")
+        cache.set("k2", "val2")
+
+        self.assertEqual(cache.get("k3"), None)
+        self.assertEqual(cache.get("k2"), "val2")
+        self.assertEqual(cache.get("k1"), "val1")
+
+        cache.set("k3", "val3")
+
+        self.assertEqual(cache.get("k3"), "val3")
+        self.assertEqual(cache.get("k2"), None)
+        self.assertEqual(cache.get("k1"), "val1")
+
+    def test_change_val_by_key(self):
+
+        cache = LRUCache(2)
+
+        cache.set("k1", "val1")
+        cache.set("k2", "val2")
+
+        self.assertEqual(cache.get("k1"), "val1")
+        self.assertEqual(cache.get("k2"), "val2")
+
+        cache.set("k2", "val2_new")
+
+        self.assertEqual(cache.get("k1"), "val1")
+        self.assertEqual(cache.get("k2"), "val2_new")
+
 
 if __name__ == "__main__":
 

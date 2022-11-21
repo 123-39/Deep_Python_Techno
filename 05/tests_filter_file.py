@@ -10,7 +10,8 @@ class TestFilterFile(unittest.TestCase):
 
         find_sentenses = filter_file("foo.txt", ["Ваня"])
 
-        self.assertEqual(find_sentenses, [])
+        with self.assertRaises(Exception):
+            next(find_sentenses)
 
     def test_correct_find(self):
 
@@ -29,19 +30,31 @@ class TestFilterFile(unittest.TestCase):
                "Shout out to everyone makin' my beats you helpin' me preach"
                ]
 
-        self.assertEqual(find_sentenses, out)
+        for _, sentence in enumerate(out):
+            self.assertEqual(next(find_sentenses), sentence)
 
     def test_non_full_words(self):
 
         find_sentenses = filter_file("foo.txt", ["wai", "talk"])
 
-        self.assertEqual(find_sentenses, [])
+        with self.assertRaises(Exception):
+            next(find_sentenses)
 
     def test_non_file(self):
 
         find_sentenses = filter_file("fake_file.txt", ["wai", "talk"])
 
-        self.assertEqual(find_sentenses, "There is no file 'fake_file.txt'")
+        self.assertEqual(next(find_sentenses),
+                         "There is no file 'fake_file.txt'")
+
+    def test_single_capacity(self):
+
+        find_sentenses = filter_file("foo.txt", ["wAiTing"])
+        out_sentence = "The Earth's in rotation you're waiting for me"
+
+        self.assertEqual(next(find_sentenses), out_sentence)
+        with self.assertRaises(Exception):
+            next(find_sentenses)
 
 
 if __name__ == "__main__":
