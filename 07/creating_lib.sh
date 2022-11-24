@@ -1,4 +1,4 @@
-sudo gcc -fPIC -shared -o libmatmul.so matrix_multiplication.c
+gcc -fPIC -shared -o libmatmul.so matrix_multiplication.c
 
 FILE=libmatmul.so
 

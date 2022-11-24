@@ -4,7 +4,11 @@ matrix chain multiplication tests
 import unittest
 import time
 
-from matrix_multiplication import c_matrix_chain_mul, py_matrix_chain_mul, matrix_generate
+from matrix_multiplication import (
+    c_matrix_chain_mul,
+    py_matrix_chain_mul,
+    matrix_generate
+)
 
 
 class TestMatrixMultiplication(unittest.TestCase):
@@ -55,6 +59,7 @@ class TestMatrixMultiplication(unittest.TestCase):
 
         with self.assertRaises(Exception):
             _ = matrix_generate(CHAIN_LEN, MATRIX_SIZE)
+
 
 if __name__ == '__main__':
 
